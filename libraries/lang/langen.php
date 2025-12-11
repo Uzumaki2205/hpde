@@ -174,7 +174,7 @@ define("chinhsachkhachhang", "Customer Policy");
 define("dangkybaogia", "Subscribe to a quote");
 define("hotlinehotro", "Hotline support");
 define("xemtatca","View all");
-define("danhmucsanpham", "Product Directory");
+// define("danhmucsanpham", "Product Directory");
 define("hotrokhachhang", "Customer Support");
 define("thang","Month");
 define("quycach","Specifications");
