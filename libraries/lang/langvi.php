@@ -174,7 +174,7 @@ define("chinhsachkhachhang","Chính sách khách hàng");
 define("dangkybaogia","Đăng ký báo giá");
 define("hotlinehotro","Hotline hỗ trợ");
 define("xemtatca","Xem tất cả");
-define("danhmucsanpham","Danh Mục Sản Phẩm");
+// define("danhmucsanpham","Danh Mục Sản Phẩm");
 define("hotrokhachhang","Hỗ trợ khách hàng");
 define("thang","Tháng");
 define("quycach","Quy cách");

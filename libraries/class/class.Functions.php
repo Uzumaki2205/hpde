@@ -1834,8 +1834,7 @@ public function uploadImage($file='', $extension='', $folder='', $newname='')
 	public function product_show($_value='', $_class='', $_thumb='300x350x1'){
 		global $lang,$optsetting,$sluglang;
 		
-		$btn_new = ($_value['btn_new'] > 0) ? '<figcaption class="product-new"> New </figcaption>' : '';
-		return $product_show = '
+$btn_new = (isset($_value['btn_new']) && $_value['btn_new'] > 0) ? '<figcaption class="product-new"> New </figcaption>' : '';		return $product_show = '
 		<div class="product-col '.$_class.'">
 			<div class="product-item">
 				<figure class="product-img effect-scale img-full itemhover">
