@@ -1,0 +1,530 @@
+body {
+    min-width: initial;
+}
+
+.container {
+    max-width: 1230px;
+    width: 100%;
+}
+
+.noidung img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+#block-toolbar,
+#block-mmenu {
+    display: none;
+    background: #f79552;
+}
+
+/*mmenu*/
+.mmenu-show {
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+}
+
+.mmenu-nav {
+    position: relative;
+}
+
+
+.mmenu-nav a {
+    display: block;
+    position: relative;
+    padding: 7px 0;
+}
+
+.mmenu-nav a span {
+    width: 30px;
+    height: 3px;
+    display: block;
+    background: #fff;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.mmenu-nav a::before,
+.mmenu-nav a::after {
+    position: absolute;
+    content: '';
+    background: inherit;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.mmenu-nav a::before {
+    top: 0;
+}
+
+.mmenu-nav a::after {
+    bottom: 0;
+}
+
+.mmenu-nav a:hover::before {
+    width: 30px;
+}
+
+.mmenu-nav a:hover::after {
+    width: 28px;
+}
+
+.mmenu-nav a:hover span {
+    width: 25px;
+}
+
+.mmenu-search {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    display: block;
+    flex-grow: 1;
+    max-width: 250px;
+}
+
+.mmenu-search form {
+    border: none !important;
+    position: relative;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.mmenu-search input {
+    border-radius: 5px;
+    text-indent: 10px;
+    right: 0px;
+    top: 0;
+    color: #000;
+    font-size: 12px;
+    width: 100%;
+    height: 33px;
+    line-height: 30px;
+    margin-left: 0px;
+    font-weight: normal;
+    border: none;
+}
+
+#keyword {
+    border-radius: 5px;
+}
+
+#btnSearch {
+    width: 17px;
+    height: 17px;
+    border: none;
+}
+
+.bg_input input {
+    border: 1px solid #cecece;
+    width: 310px;
+    margin: 0px;
+    height: 27px;
+    line-height: 27px;
+    color: #a3a3a3;
+    background: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 13px;
+}
+
+.mmenu-icon {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    height: auto;
+    line-height: initial;
+}
+
+.mmenu-icon i {
+    color: #000;
+    font-size: 18px;
+}
+
+/*end mmenu*/
+#block-toolbar {
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    z-index: 500;
+    height: auto;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: none;
+    padding: 8px 0;
+    box-shadow: 0px -1px 2px #8e8b8b;
+}
+
+.toolbar-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toolbar-box li {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.toolbar-box li a {
+    display: block;
+}
+
+.toolbar-box li a img {
+    height: 24px;
+    width: auto;
+    -webkit-filter: brightness(0) invert(1);
+    -o-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+.toolbar-box li a span {
+    font-weight: 400;
+    color: #fff;
+    font-size: 13px;
+    display: none;
+}
+
+/*media*/
+/*Responsive default*/
+.resCol {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+@media screen and (max-width: 1200px) {
+    .resBox {
+        margin: 0 -10px;
+    }
+
+    .resCol {
+        padding: 0 10px;
+        margin-bottom: 20px;
+        width: 25%;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .newsPicture-col,
+    .resCol {
+        width: calc(100% / 3);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .resBox {
+        margin: 0 -5px;
+    }
+
+    .resCol {
+        padding: 0 5px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .newsPicture-col,
+    .resCol {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .resBox {
+        margin: 0 -2.5px;
+    }
+
+    .resCol {
+        padding: 0 2.5px;
+        margin-bottom: 5px;
+    }
+}
+
+/*end Responsive default*/
+/*===================================*/
+/*Responsive Pagein*/
+@media screen and (max-width: 992px) {
+    .inSanpham-aside {
+        display: none;
+    }
+
+    .inSanpham-img {
+        width: 40%;
+    }
+
+    .inSanpham-text {
+
+        width: calc(60% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .inNews-date {
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+        -o-transform: scale(0.7);
+        transform: scale(0.7);
+    }
+
+
+    .inNews-text h3 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .inSanpham-img,
+    .inSanpham-text,
+    .inSanpham-col,
+    .inContact-col {
+        width: 100% !important;
+    }
+
+    .inSanpham-img {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .inNews-col,
+    .inVideo-col {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .inNews-col,
+    .inAlbum-col {
+        width: 50%;
+    }
+
+    .inNews-col {
+        padding: 0 5px;
+        margin-bottom: 10px;
+    }
+
+    .inNews-box {
+        margin: 0 -5px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .inVideo-col {
+        width: 100%;
+    }
+
+    .inNews-date {
+        transform: scale(1);
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+}
+
+/*end Responsive Pagein*/
+/*===================================*/
+@media screen and (max-width: 1200px) {
+    .introduce-show {
+        width: 100%;
+    }
+
+    .header-top .box {
+        padding-right: 10px;
+    }
+
+    .header-hotline {
+        padding: 0;
+        background: none
+    }
+
+    .slide-button-next {
+        right: 10px;
+    }
+
+    .slide-button-prev {
+        left: 10px;
+    }
+
+    .introduce-bg {
+        position: static;
+        width: 750px;
+    }
+
+    .introduce-show {
+        min-height: initial;
+    }
+
+    .mail-form textarea,
+    .mail-form input {
+        border: 1px solid #b2b2b2
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .inProduct-aside,
+    .header-hotline {
+        display: none
+    }
+
+    .inProduct-show {
+        width: 100%;
+    }
+
+    .footer-company {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .header-logo {
+        transform: scale(0.9);
+    }
+
+    .header-logo a {
+        position: static;
+    }
+
+    .header-mid .box {
+        justify-content: space-around;
+    }
+
+    .branch-col {
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .header-top .box::before,
+    #btn-FB,
+    #quick-alo-phoneIcon,
+    #quick-zalo-phoneIcon,
+    .drag-wrapper,
+    #block-menu {
+        display: none;
+    }
+
+    #block-toolbar,
+    #block-mmenu {
+        display: block;
+    }
+
+    .newsClassic-col {
+        width: 100%
+    }
+
+    .project-col {
+        width: 50%;
+    }
+
+    #footer {
+        margin-bottom: 40px;
+    }
+
+    .copyright-text {
+        text-align: center;
+    }
+
+    .header-top .box {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .plist-text {
+        padding: 10px;
+    }
+
+    .introduce-bg {
+        transform: scale(0.7);
+        left: calc(50% - 750px/2);
+        position: absolute;
+    }
+
+    .introduce-tab {
+
+        height: 265px;
+    }
+
+    .mail-form textarea,
+    .mail-form input {
+        width: calc(100% / 3);
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .newsClassic-text article,
+    .header-social {
+        display: none;
+    }
+
+    .top-contact .article-contact,
+    .form-contact,
+    .mail-form textarea,
+    .mail-form input,
+    .branch-col,
+    .plist-col,
+    .footer-facebook,
+    .footer-cty,
+    .footer-chinhsach,
+    .header-info {
+        width: 100%;
+    }
+
+    .branch-col {
+        padding: 0;
+    }
+
+    .header-lang {
+
+        margin: 0;
+    }
+
+    .introduce-tab {
+        height: 190px;
+    }
+
+    .introduce-bg {
+        transform: scale(0.5);
+        position: absolute;
+        left: calc(50% - 750px/2);
+    }
+
+    .mail-form,
+    .mail-title,
+    .mail-form textarea,
+    .mail-form input {
+        margin-bottom: 10px;
+    }
+
+}
