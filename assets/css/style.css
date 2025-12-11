@@ -84,7 +84,7 @@
     --color-btn: #fff;
     --bacground-main: #ec2d3f;
     --bacground-hover: #ec2d3f;
-    --bacground-btn: #f79552;
+    --bacground-btn: #2E8B57;
     --color-red: #ec2d3f;
     --color-gray: gray;
 }
@@ -138,7 +138,7 @@
 }
 
 .header-top {
-    border-top: 3px solid #f79552;
+    border-top: 3px solid #2E8B57;
 }
 
 .header-top .container {
@@ -151,7 +151,7 @@
 .header-top .box {
     align-items: center;
     justify-content: flex-end;
-    background: #f79552;
+    background: #2E8B57;
     padding-right: calc(50% - 1200px/2);
     padding-left: 20px;
     position: relative;
@@ -163,7 +163,7 @@
 .header-top .box::before {
     position: absolute;
     content: '';
-    border-top: 40px solid #f79552;
+    border-top: 40px solid #2E8B57;
     border-left: 20px solid transparent;
     top: 0;
     right: 100%;
@@ -241,7 +241,7 @@
 /*============================*/
 /* Menu */
 #block-menu {
-    background: #f79552;
+    background: #2E8B57;
 }
 
 .menu-main {
@@ -288,7 +288,7 @@
 }
 
 .menu-main li ul {
-    background-color: #f79552;
+    background-color: #2E8B57;
     position: absolute;
     visibility: hidden;
     opacity: 0;
@@ -309,7 +309,7 @@
 
 .menu-main .menu-list li {
     text-align: left;
-    border-bottom: 1px solid #f9b586;
+    border-bottom: 1px solid #2E8B57;
 }
 
 .menu-main .menu-list li a {
@@ -580,7 +580,7 @@
 }
 
 .aside-title {
-    background: #f79552;
+    background: #2E8B57;
     position: relative;
     text-align: center;
 }
@@ -924,7 +924,7 @@
 }
 
 .introduce-result a:hover {
-    background: #f79552;
+    background: #2E8B57;
     color: #fff;
 }
 
@@ -990,7 +990,7 @@
 }
 
 .tab-active {
-    background: #f79552;
+    background: #2E8B57;
     color: #fff;
 }
 
@@ -1025,7 +1025,7 @@
 }
 
 .news-text h3 p span {
-    background: #f79552;
+    background: #2E8B57;
     display: block;
     font-family: 'MontserratRegular';
     font-size: 13px;
@@ -1059,7 +1059,7 @@
 .news-text button a {
     font-family: main;
     font-size: 14px;
-    color: #ff6600;
+    color: #2E8B57;
 }
 
 /*end news*/
@@ -1089,7 +1089,7 @@
 .branch-col a {
     font-family: main;
     font-size: 15px;
-    color: #f79552;
+    color: #2E8B57;
     background: #fff;
     display: inline-block;
     width: 135px;
@@ -1100,7 +1100,7 @@
 }
 
 .branch-col a:hover {
-    background: #f79552;
+    background: #2E8B57;
     color: #fff;
 }
 
@@ -1247,7 +1247,7 @@
     transition: all 0.5s;
     min-width: 70px;
     line-height: 40px;
-    background: #eb5e00;
+    background: #2E8B57;
     color: #fff;
 }
 
@@ -1328,7 +1328,7 @@
 
 /*bot*/
 .footer-bot {
-    background: #eb5e00;
+    background: #2E8B57;
     padding: 15px 0;
     color: #fff;
     font-size: 13px;
